@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bun Bun Bake Shop</title>
+  <meta name="author" content="Zhuona Ma">
+  <meta name="viewport" content="width=device-width, maximun-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap" rel="stylesheet">
+  <script src="main.js" async></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logofile.png" width="120" height="120" alt="Bun Bun logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html#section-menu">MENU</a></li>
+                <li><a href="./index.html#section-about">ABOUT</a></li>
+            </ul>
+        </nav>
+        <a class="cart" href="cart.html">CART(0)</a>
+    </header>
+
+
+    <div class="details-wrapper">
+        <div class="details-display">
+            <div class="in-display">
+                <img class="big-demo" id="disp" src="./details/original_roll.jpeg">
+            </div>
+            <div class="indicator-list">
+                <img class="demo" src="./details/original_roll.jpeg" onclick="changeImg(this.src)">
+                <img class="demo" src="./details/sugar_milk.jpg" onclick="changeImg(this.src)">
+                <img class="demo" src="./details/vanilla_milk.jpg" onclick="changeImg(this.src)">
+                <img class="demo" src="./details/chocolate.jpg" onclick="changeImg(this.src)">
+            </div>
+        </div>
+        <div class="details-text">
+            <div class="blk product-detail">
+                <strong class="headline">Original Roll</strong>
+                <br><span class="price">$3.50</span>
+                <br><br>A freshly baked, perfectly flaky blueberry roll stuffed with cream cheese and topped with powdered sugar.
+            </div>
+            <div class="blk ingredient">
+                <strong>Ingredient</strong>
+                <br>Cream Cheese, Cake, Powdered Sugar, Butter, Cinnamon
+            </div>
+            <form>
+                <div class="blk glazing">
+                    <strong>Glazing</strong>
+                    <br><br>
+                    <input type="radio" value="None" name="glazing" onclick="changeImg2(this.value)">None</input>
+                    <input type="radio" value="Sugar-Milk" name="glazing" onclick="changeImg2(this.value)">Sugar-Milk</input>
+                    <input type="radio" value="Vanilla-Milk" name="glazing" onclick="changeImg2(this.value)">Vanilla-Milk</input>
+                    <input type="radio" value="Double-Chocolate" name="glazing" onclick="changeImg2(this.value)">Double-Chocolate</input>
+                </div>
+                <div class="blk quantity">
+                    <strong>Quantity</strong>
+                    <br><br>
+                    <input type="radio" value="1" name="quantity">1</input>
+                    <input type="radio" value="3" name="quantity">3</input>
+                    <input type="radio" value="6" name="quantity">6</input>
+                    <input type="radio" value="12" name="quantity">12</input>
+                </div>
+                <div class="blk">
+                    <a href="index.html#section-menu" class="primary-btn add-btn blueberry">CONTINUE SHOPPING</a>
+                    <a href="#" class="primary-btn" id="addToCartBtn">ADD TO CART</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="footer-bottom">
+        &copy; 2010-2019 | Bun Bun Bake Shop
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
+

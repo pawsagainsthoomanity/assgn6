@@ -1,0 +1,143 @@
+html{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+}
+
+h1{
+  font-size: 16px;
+}
+
+p{
+  font-size: 14px;
+}
+
+hr{
+  width: 85%;
+}
+
+button{
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px;
+  color: white;
+  background-color: #753112;
+}
+
+input{
+  display: block; 
+  margin: 8px; 
+  padding: 3px 6px; 
+  width: 100px;
+  outline: 0; 
+  border: 2px solid #753112;  
+  color: black;
+  border-radius: 1.5px; 
+  text-align: center; 
+  width: 32px;
+}
+
+input:focus {background: white;}
+
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+}
+
+ul{
+   list-style-type: none; 
+}
+
+li, a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #753112;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navbar{
+    line-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 32px;
+}
+
+.navbar li a{
+    font-weight: 500;
+}
+
+.navbar li a:hover{
+    color: #a38d83;
+}
+
+.bt{
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px;
+    color: white;
+    background-color: #753112;
+}
+
+.item{
+  display: flex;
+  margin: 0 auto;
+  padding: 16px 10%;
+  max-height: 200px;
+}
+
+.cart-item-thumbnail{
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.cart-item-name{
+  box-sizing: border-box;
+  flex: 5;
+  padding-left: 20px;
+}
+
+.cart-item-remove{
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-img{
+  width: 100%;
+  padding-top: 100%;
+  background-image: url("./menu/original_roll.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.checkout-container{
+  padding: 16px 10%;
+  text-align: right;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.title{
+  margin: 48px  ;
+  text-align: center;
+  font-size: 32px;
+}
+
